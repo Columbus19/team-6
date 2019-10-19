@@ -4831,23 +4831,33 @@ a.badge-dark:focus, a.badge-dark.focus {
   box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
 }
 
+
+
 .jumbotron {
+  width: 75%;
   padding: 2rem 1rem;
   margin-bottom: 2rem;
-  background-color: #e9ecef;
+  background-color: #019945;
+  color: #019945;
   border-radius: 0.75rem;
 }
 
 @media (min-width: 576px) {
   .jumbotron {
     padding: 4rem 2rem;
+    width: 75%
+    background-color: #019945;
+    color: #000;
   }
 }
 
 .jumbotron-fluid {
+  width: 75
   padding-right: 0;
   padding-left: 0;
   border-radius: 0;
+  background-color: #019443;
+  color: #019443;
 }
 
 .alert {
@@ -9846,4 +9856,8 @@ form .row:first-child .floating-label-form-group {
 
 .copyright {
   background-color: #1a252f;
+}
+
+#spec_jumbo {
+  color: #019945
 }
