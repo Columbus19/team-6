@@ -30,9 +30,9 @@ class HomeScreenState extends State<HomeScreen> {
         decoration: BoxDecoration(
           color: Colors.black,
         ),
-        child: Center(
+        child: Center(          
           child: DecoratedBox(
-            decoration: BoxDecoration(color: Colors.green),
+            decoration: BoxDecoration(color: Colors.green),            
               child: Padding(padding: const EdgeInsets.only(left:175.0,right:175.0,top:500.0, bottom:0.0),
         ),
       ),
