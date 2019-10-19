@@ -50,7 +50,7 @@ class HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget _buildHomeScreen() {
+Widget _buildHomeScreen() {
     return ListView.builder(
         padding: const EdgeInsets.all(16.0),
         itemBuilder: /*1*/ (context, i) {
