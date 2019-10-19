@@ -1,0 +1,4 @@
+#Sat Oct 19 04:08:43 EDT 2019
+base.0=/Users/barretto/Downloads/x-flutter-landingpage-flutter-facts-native/landingpage/build/app/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

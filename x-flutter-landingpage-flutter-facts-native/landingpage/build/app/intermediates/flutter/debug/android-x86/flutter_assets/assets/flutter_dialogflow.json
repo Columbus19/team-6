@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "apprisen-gehaef",
+  "private_key_id": "c9937b97e754bb3056c60fd665ff169a8935f459",
+  "private_key": "",
+  "client_email": "demo-155@apprisen-gehaef.iam.gserviceaccount.com",
+  "client_id": "103172430806409936459",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/demo-155%40apprisen-gehaef.iam.gserviceaccount.com"
+}
