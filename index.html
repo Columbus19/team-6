@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 
+    <script type="text/javascript">
+      /* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+      (function (d, m) {
+        var kommunicateSettings = {
+          "appId": "3f18e7dafb9061a20ebe430ca6f2f9eeb",
+          "popupWidget": true,
+          "automaticChatOpenOnNavigation": true
+        };
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0];
+        h.appendChild(s);
+        window.kommunicate = m;
+        m._globals = kommunicateSettings;
+      })(document, window.kommunicate || {});
+    </script>
+
 <head>
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="Team6">
 
-  <title>Freelancer - Start Bootstrap Theme</title>
+  <title>Apprisen</title>
 
   <!-- Custom fonts for this theme -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -25,7 +44,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="img/appr.jpeg" alt=""></a>
       <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -33,28 +52,36 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Payment History</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">Resources</a>
           </li>
-          <li class="nav-item mx-0 mx-lg-1">
+          <!-- <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
   </nav>
 
+
+
   <!-- Masthead -->
   <header class="masthead bg-primary text-white text-center">
-    <div class="container d-flex align-items-center flex-column">
+      <div class="col-lg-8 col-md-10 col-sm-12 col-xs-12 offset-lg-2 offset-md-1 float-md-center">
 
-      <!-- Masthead Avatar Image -->
-      <img class="masthead-avatar mb-5" src="img/avataaars.svg" alt="">
-
-      <!-- Masthead Heading -->
-      <h1 class="masthead-heading text-uppercase mb-0">Start Bootstrap</h1>
+    <div class="jumbotron">
+      <h1 class="display-5">You have risen above</h1>
+      <h1 class="display-4">$5000</h1>
+      <p class="lead">of debt over the last 12 months!</p>
+      <hr class="my-4">
+      <p>Your credit score has improved by 23 points since last month, keep it up!</p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" onclick="location.href = 'https:/?www.chase.com/personal/credit-cards/login-account-access';" role="button">Make your next Payment Now!</a>
+      </p>
+      </div>
+    </div>
 
       <!-- Icon Divider -->
       <div class="divider-custom divider-light">
@@ -66,7 +93,7 @@
       </div>
 
       <!-- Masthead Subheading -->
-      <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p>
+      <!-- <p class="masthead-subheading font-weight-light mb-0">Graphic Artist - Web Designer - Illustrator</p> -->
 
     </div>
   </header>
@@ -76,7 +103,9 @@
     <div class="container">
 
       <!-- Portfolio Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+      <!-- <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Payment History</h2> -->
+      <h3 class="page-section-heading text-center text-uppercase text-secondary mb-0">You've risen above. Good Job!</h3>
+
 
       <!-- Icon Divider -->
       <div class="divider-custom">
@@ -151,6 +180,9 @@
         </div>
 
         <!-- Portfolio Item 6 -->
+        
+          <!-- <li><h1>Payment 1</h1></li> -->
+        
         <div class="col-md-6 col-lg-4">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
@@ -162,6 +194,11 @@
           </div>
         </div>
 
+        
+        <!-- <button onclick="location.href = 'https://www.chase.com/personal/credit-cards/login-account-access';" sytle = "text-align:center";id="myButton" class="float-left submit-button" >Make A Payment</button> -->
+        <div class="col-md-12 text-center"> 
+          <button type="button" onclick="location.href = 'https://www.chase.com/personal/credit-cards/login-account-access';" class="btn btn-primary btn-lg">Make a Payment</button>
+        </div>
       </div>
       <!-- /.row -->
 
@@ -173,7 +210,7 @@
     <div class="container">
 
       <!-- About Section Heading -->
-      <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+      <h2 class="page-section-heading text-center text-uppercase text-white">Resources</h2>
 
       <!-- Icon Divider -->
       <div class="divider-custom divider-light">
@@ -186,33 +223,34 @@
 
       <!-- About Section Content -->
       <div class="row">
-        <div class="col-lg-4 ml-auto">
-          <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+        <div class="col-lg-10 ml-auto">
+          <p class="lead">For a list of tools and resources please visit us at <a href = https://www.apprisen.com/tools style="color:#ffffff">our site</a>          
+          </p>
         </div>
         <div class="col-lg-4 mr-auto">
-          <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+          <!-- <p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p> -->
         </div>
       </div>
 
       <!-- About Section Button -->
-      <div class="text-center mt-4">
+      <!-- <div class="text-center mt-4">
         <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
           <i class="fas fa-download mr-2"></i>
           Free Download!
         </a>
-      </div>
+      </div> -->
 
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact Section 
   <section class="page-section" id="contact">
     <div class="container">
 
-      <!-- Contact Section Heading -->
+      <!-- Contact Section Heading 
       <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
 
-      <!-- Icon Divider -->
+      <!-- Icon Divider 
       <div class="divider-custom">
         <div class="divider-custom-line"></div>
         <div class="divider-custom-icon">
@@ -220,11 +258,11 @@
         </div>
         <div class="divider-custom-line"></div>
       </div>
-
-      <!-- Contact Section Form -->
+      <!-- Contact Section Form 
       <div class="row">
         <div class="col-lg-8 mx-auto">
           <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+          <!--
           <form name="sentMessage" id="contactForm" novalidate="novalidate">
             <div class="control-group">
               <div class="form-group floating-label-form-group controls mb-0 pb-2">
@@ -265,7 +303,7 @@
 
     </div>
   </section>
-
+-->
   <!-- Footer -->
   <footer class="footer text-center">
     <div class="container">
@@ -274,8 +312,9 @@
         <!-- Footer Location -->
         <div class="col-lg-4 mb-5 mb-lg-0">
           <h4 class="text-uppercase mb-4">Location</h4>
-          <p class="lead mb-0">2215 John Daniel Drive
-            <br>Clark, MO 65243</p>
+          <p class="lead mb-0">690 Taylor Road, Suite 150, Gahanna, OH 43230
+            <br>614.552.2222
+          </p>
         </div>
 
         <!-- Footer Social Icons -->
@@ -297,21 +336,14 @@
 
         <!-- Footer About Text -->
         <div class="col-lg-4">
-          <h4 class="text-uppercase mb-4">About Freelancer</h4>
-          <p class="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by
-            <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+          <h4 class="text-uppercase mb-4">About Apprisen</h4>
+          <p class="lead mb-0">Apprisen's mission is to help you stay finacially healthy
+            <a href="https://www.apprisen.com">Learn More</a>.</p>
         </div>
 
       </div>
     </div>
   </footer>
-
-  <!-- Copyright Section -->
-  <section class="copyright py-4 text-center text-white">
-    <div class="container">
-      <small>Copyright &copy; Your Website 2019</small>
-    </div>
-  </section>
 
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
   <div class="scroll-to-top d-lg-none position-fixed ">
