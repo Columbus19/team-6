@@ -8,25 +8,49 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Startup Name Generator',
-      home: RandomWords(),
+      home: HomeScreen(),      
     );
   }
 }
 
-class RandomWordsState extends State<RandomWords> {
+class HomeScreenState extends State<HomeScreen> {
   final _suggestions = <WordPair>[];
   final _biggerFont = const TextStyle(fontSize: 28.0);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Startup Name Generator'),
+      title: Text('AppRisen', style: TextStyle(color: Colors.black)),
+      centerTitle: true,
+      backgroundColor: Colors.white12,
       ),
-      body: _buildSuggestions(),
+      //body: _buildHomeScreen(),
+      body: Container(
+        //Add box decoration
+        decoration: BoxDecoration(
+          color: Colors.black,
+        ),
+        child: Center(
+          child: DecoratedBox(
+            decoration: BoxDecoration(color: Colors.green),
+              child: Padding(padding: const EdgeInsets.only(left:175.0,right:175.0,top:500.0, bottom:0.0),
+        ),
+      ),
+    ),
+    ),
+      floatingActionButton: FloatingActionButton.extended (
+        icon: Icon(Icons.message, color: Colors.green,),
+        label: Text("Chat", style: TextStyle(color: Colors.green)),
+        backgroundColor: Colors.white,
+        //mini: true,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(16))),
+        elevation: 10,
+        highlightElevation: 20,
+      ),
     );
   }
 
-  Widget _buildSuggestions() {
+  Widget _buildHomeScreen() {
     return ListView.builder(
         padding: const EdgeInsets.all(16.0),
         itemBuilder: /*1*/ (context, i) {
@@ -52,7 +76,12 @@ class RandomWordsState extends State<RandomWords> {
   }
 }
 
-class RandomWords extends StatefulWidget {
+class HomeScreen extends StatefulWidget {
   @override
-  RandomWordsState createState() => RandomWordsState();
+  HomeScreenState createState() => HomeScreenState();
 }
+
+
+
+// check this link
+// https://newcodingera.com/login-signup-pages-in-flutter/
